@@ -1,0 +1,331 @@
+html{
+  box-sizing: border-box;
+  background-color: #F2F2F2;
+}
+
+body{
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+  max-width: 1500px;
+  /* background-color: red; */
+}
+
+/*                            DEBUT HEADER                    */ /*             MediaQueries @ 263          */
+
+.topbar{
+  text-align: center;
+  background-color: black;
+  color: pink;
+  padding: 10px 0 10px 0;  
+}
+
+header .container{
+  background-color: #F6D4F5;
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 50px;
+  justify-content: space-between;
+  padding: 2em;
+}
+
+#lien-logo{
+  width: 30%;
+  align-self: center;
+}
+
+#logo{
+  width: 90%;
+  position: relative;
+}
+
+#cart{
+  width: fit-content;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.left {
+  margin: 30px 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+
+.left span{
+  font-weight: bolder;
+}
+
+#logo-nav{
+  margin-block: 33px;
+  height: fit-content;
+  color: palevioletred;
+  font-size: xx-large;
+}
+
+nav{
+  width: 80%;
+  display: flex;
+  height: 20%;
+  margin-inline: auto;
+  font-size: 2vw;
+  margin: 1em auto;
+
+}
+
+nav a{
+  text-decoration: none;
+  color: black;
+  width: 20%;
+  display: flex;
+}
+
+nav span{
+  margin: auto;
+}
+
+header .container > nav a:hover{
+  background-color: rgb(53, 50, 50);
+  color: white;
+  transition: all 0.1s ease 0s;
+}
+
+/*                            DEBUT MAIN                    */
+
+/*                              #slider                     */
+#slider {
+  width: 70%;
+  margin-inline: auto;
+  margin-block: 1em;
+  background-color: white;
+  display: flex;
+  padding: 1.2em;
+}
+
+#slider h2{
+  background-color: #F6D4F5;
+  opacity: 0.8;
+  position: absolute;
+  box-shadow: 0 0 5px rgba(0,0, 0, 0.1);
+  font-size: 1em;
+  font-weight: bold;
+  float: right;
+  margin-top: 0;
+}
+
+#slider span{
+  font-weight: normal;
+}
+
+#escarpins-rouges{
+  max-width: 100%;
+  margin: auto;
+}
+
+#escarpins-rouges h3{
+  min-width: 20%;
+  font-size: 0.2vw;
+}
+/*                            section #select                  */
+
+#select{
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin: auto;
+  padding: 1.2em;
+  box-shadow: 0 0 5px rgba(0,0, 0, 0.1);
+}
+
+#select img:not(:hover){
+  transition: all 0.2s ease;
+  opacity: 0.5;
+}
+
+#liste-escarpins{
+  display: flex;
+  max-width: 100%;
+  justify-content: space-between;
+}
+
+.escarpin{
+  align-self:flex-end;
+}
+
+.escarpin img{
+  max-width: 100%;
+}
+
+h1{
+  margin-inline:0.5em;
+  font-size: 3.5vw;
+}
+
+/*                          section #news                   */
+
+#news{
+  display: flex;
+  width: 75%;
+  margin-inline: auto;
+  justify-content: space-between;
+}
+
+#news article{
+  justify-content: flex-start;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  margin-block: 1em;
+  margin-inline: 0.5em;
+} 
+
+#news img{
+  max-width: 100%;
+  margin-inline: auto;
+  
+}
+
+#nos-nouveautes{
+  background-color: #E934C1;
+  color: white;
+}
+
+#news h2{
+  max-width: 100%;
+  font-family: Courgette;
+  font-size: 1em;
+  text-align: left;
+  
+}
+
+#nos-best-sellers{
+  background-color: #91BB4A;
+  color: white;
+  
+}
+
+#notre-coup-de-coeur{
+  background-color: #0397B1;
+  color: white;
+  
+}
+
+#news small{
+  margin: 1em;
+}
+
+/*                         debut footer                     */
+
+/*                         debut infos                      */
+
+#info{
+  width: 100%;
+  background-color: #E3ADE0;
+  display: flex;
+  justify-content: space-around;
+  height: 4em;
+  align-items: center;
+}
+
+#info article{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+
+#info i{
+  margin-bottom: 0.5em;
+}
+
+/*                        bottombar                         */
+
+#bottombar{
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #F6D4F5;
+  text-align: center;
+}
+
+ul{
+  list-style:none;
+  margin-left:0;
+  padding-left:0;
+}
+
+/*                            divers                        */
+
+h3, small{
+  font-family: Courgette;
+  text-align: center;
+  /* font-size: 2vw; */
+}
+
+/******************************************  Media Queries   ************************************************/
+
+/*                                               max widht 640px                                            */
+
+@media screen and (max-width: 640px) {
+
+  nav{
+    width: 100%;
+    flex-direction: column;
+    align-content: center;
+  }
+
+  #cart{
+    display: none;
+  }
+
+  nav a{
+    width: 80%;
+    font-size: 2em;
+    margin: auto;
+  }
+  
+  #lien-logo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  #slider{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+  }
+
+  #slider h2{
+    position: relative;
+    width: 100%;
+    margin-bottom: 0 0 1em 0;
+  }
+
+  #select{
+    align-items: center;
+  }
+
+  #liste-escarpins{
+    flex-direction: column;
+  }
+
+  #select h1{
+    max-width: 80%;
+  }
+  
+  #news{
+    flex-wrap: wrap;
+    
+  }
+
+  
+  footer section, footer article, footer #bottombar, #bottombar article{
+    padding: 5px;
+    max-width: 95%;
+    margin-inline: auto;
+    font-size: 2vw;
+  }
+
+}
